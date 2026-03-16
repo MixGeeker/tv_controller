@@ -1,6 +1,17 @@
 # TV Controller
 
+[![CI](https://github.com/MixGeeker/tv_controller/actions/workflows/ci.yml/badge.svg)](https://github.com/MixGeeker/tv_controller/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
+
 一个基于 `UPnP / DLNA` 的电视控制与投屏系统，适合做成可开源的独立能力模块，再通过 `REST API` 集成到 ERP、信息发布系统、门店中控系统或企业后台中。
+
+如果你正在做：
+
+- ERP 对电视、商显或播放盒子的统一控制
+- 门店、展厅、工厂看板或公告屏的内容下发
+- 一个可开源、可二开、可嵌入业务系统的播控能力层
+
+这个仓库就是为这类场景准备的。
 
 项目采用 monorepo 结构，包含：
 
@@ -68,6 +79,13 @@
 - 前端：`Vue 3` + `Vite`
 - 包管理：`pnpm`
 - 部署方式：本地 Node 运行 / Docker Compose
+
+## 仓库状态
+
+- 已提供本地启动与 Docker 启动方案
+- 已提供中文控制台与中文文档
+- 已内置基础 CI 校验：`check`、`build`、`test`
+- 已补齐基础开源协作文件：`LICENSE`、`CONTRIBUTING`、Issue / PR 模板
 
 ## 目录结构
 
@@ -412,6 +430,21 @@ pnpm check
 pnpm test
 ```
 
+## 开源协作
+
+欢迎基于真实业务场景继续扩展这个项目，尤其是以下方向：
+
+- 更多品牌和型号的兼容性验证
+- ERP / 门店系统 / 信息发布系统的对接案例
+- 设备分组、编排与场景化控制
+- 更稳定的状态推送和审计能力
+
+协作入口：
+
+- 贡献说明：[`CONTRIBUTING.md`](./CONTRIBUTING.md)
+- Bug 反馈：[`Issues`](https://github.com/MixGeeker/tv_controller/issues)
+- 代码提交：[`Pull Requests`](https://github.com/MixGeeker/tv_controller/pulls)
+
 ## 后续方向
 
 - 品牌兼容层
@@ -422,5 +455,6 @@ pnpm test
 
 ## License
 
-待确定。  
-如果目标是方便嵌入 ERP 和二次开发，推荐使用 `MIT`。
+本项目使用 [`MIT License`](./LICENSE)。
+
+这意味着你可以将它用于商业项目、内部系统和二次开发，只需保留原始许可声明。

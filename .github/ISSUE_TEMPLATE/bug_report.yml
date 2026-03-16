@@ -1,0 +1,58 @@
+name: Bug 反馈
+description: 反馈实际运行中的缺陷、兼容性问题或异常行为
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈问题。请尽量填写完整，特别是设备型号、媒体格式和日志。
+  - type: input
+    id: environment
+    attributes:
+      label: 运行环境
+      description: 例如 Windows 11 / Ubuntu 24.04 / Docker
+      placeholder: Windows 11 + Node.js 22
+    validations:
+      required: true
+  - type: input
+    id: tv_model
+    attributes:
+      label: 电视品牌与型号
+      placeholder: LG OLED65C1PUB
+    validations:
+      required: true
+  - type: input
+    id: public_base_url
+    attributes:
+      label: PUBLIC_BASE_URL
+      description: 请填写实际配置值，注意不要写敏感信息
+      placeholder: http://192.168.124.19:3100
+    validations:
+      required: true
+  - type: textarea
+    id: bug_description
+    attributes:
+      label: 问题描述
+      description: 请描述实际现象、预期行为，以及复现步骤
+      placeholder: 上传中文文件名后播放失败，后端返回...
+    validations:
+      required: true
+  - type: textarea
+    id: media_info
+    attributes:
+      label: 媒体信息
+      description: 媒体来源、文件格式、编码、内容类型
+      placeholder: 本地上传 mp4，H.264/AAC，content-type=video/mp4
+  - type: textarea
+    id: logs
+    attributes:
+      label: 相关日志
+      description: 请粘贴后端日志、浏览器控制台日志或错误响应
+      render: shell
+  - type: textarea
+    id: extra
+    attributes:
+      label: 补充信息
+      description: 例如同一文件能否被手机投屏 App 播放

@@ -2,6 +2,16 @@
   "name": "tv-controller",
   "version": "0.1.0",
   "private": true,
+  "description": "基于 UPnP / DLNA 的电视控制与投屏系统，包含 TypeScript 核心库、NestJS API 和 Vue 控制台。",
+  "license": "MIT",
+  "homepage": "https://github.com/MixGeeker/tv_controller#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MixGeeker/tv_controller.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MixGeeker/tv_controller/issues"
+  },
   "packageManager": "pnpm@10.13.1",
   "scripts": {
     "build": "pnpm -r build",

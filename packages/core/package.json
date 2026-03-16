@@ -2,9 +2,20 @@
   "name": "@tv-controller/core",
   "version": "0.1.0",
   "private": false,
+  "description": "TV Controller 的可复用 TypeScript 核心库，负责设备发现、播放控制与会话管理。",
+  "license": "MIT",
   "type": "commonjs",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MixGeeker/tv_controller.git",
+    "directory": "packages/core"
+  },
+  "homepage": "https://github.com/MixGeeker/tv_controller/tree/main/packages/core",
+  "bugs": {
+    "url": "https://github.com/MixGeeker/tv_controller/issues"
+  },
   "files": [
     "dist"
   ],

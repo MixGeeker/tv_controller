@@ -1,0 +1,39 @@
+name: 功能建议
+description: 提交新功能、兼容性增强或工程化改进建议
+title: "[Feature] "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: feature_background
+    attributes:
+      label: 背景
+      description: 请说明你所在的业务场景或痛点
+      placeholder: 希望把设备分组能力集成到 ERP 中，用于门店多屏统一控制
+    validations:
+      required: true
+  - type: textarea
+    id: feature_solution
+    attributes:
+      label: 期望方案
+      description: 你希望项目提供什么能力
+      placeholder: 提供设备组 API，并支持批量启动、批量停止
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 可替代方案
+      description: 如果有临时绕过方案或其他实现思路，也可以写上
+  - type: dropdown
+    id: area
+    attributes:
+      label: 影响模块
+      options:
+        - packages/core
+        - apps/api
+        - apps/web
+        - 工程化 / CI
+        - 文档
+    validations:
+      required: true
