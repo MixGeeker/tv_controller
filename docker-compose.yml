@@ -1,0 +1,25 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+    environment:
+      HOST: 0.0.0.0
+      PORT: 3100
+      PUBLIC_BASE_URL: ${PUBLIC_BASE_URL:-http://localhost:3100}
+      UPLOADS_DIR: /app/storage/uploads
+    ports:
+      - "3100:3100"
+    volumes:
+      - ./.docker/uploads:/app/storage/uploads
+
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+      args:
+        VITE_API_BASE_URL: ${VITE_API_BASE_URL:-http://localhost:3100}
+    ports:
+      - "8080:80"
+    depends_on:
+      - api

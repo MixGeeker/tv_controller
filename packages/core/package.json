@@ -1,0 +1,26 @@
+{
+  "name": "@tv-controller/core",
+  "version": "0.1.0",
+  "private": false,
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "dev": "tsc -p tsconfig.build.json --watch",
+    "lint": "tsc -p tsconfig.build.json --noEmit",
+    "check": "pnpm run lint",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "node-ssdp": "^4.0.1",
+    "upnp-client-ts": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "vitest": "^3.2.4"
+  }
+}

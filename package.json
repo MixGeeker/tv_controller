@@ -1,0 +1,16 @@
+{
+  "name": "tv-controller",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@10.13.1",
+  "scripts": {
+    "build": "pnpm -r build",
+    "dev": "pnpm --parallel --filter @tv-controller/core --filter @tv-controller/api --filter @tv-controller/web dev",
+    "lint": "pnpm -r lint",
+    "test": "pnpm -r test",
+    "check": "pnpm -r check"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}

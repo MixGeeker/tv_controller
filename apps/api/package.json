@@ -1,0 +1,38 @@
+{
+  "name": "@tv-controller/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "dev": "nest start --watch",
+    "start": "node dist/main.js",
+    "check": "tsc -p tsconfig.json --noEmit",
+    "lint": "node -e \"console.log('lint not configured for @tv-controller/api')\"",
+    "test": "node -e \"console.log('No API tests configured yet')\""
+  },
+  "dependencies": {
+    "@nestjs/common": "^11.1.6",
+    "@nestjs/config": "^4.0.2",
+    "@nestjs/core": "^11.1.6",
+    "@nestjs/platform-express": "^11.1.6",
+    "@nestjs/serve-static": "^5.0.4",
+    "@tv-controller/core": "workspace:*",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.2",
+    "iconv-lite": "^0.7.2",
+    "mime-types": "^3.0.1",
+    "multer": "^2.0.2",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^11.0.10",
+    "@types/express": "^5.0.3",
+    "@types/mime-types": "^2.1.4",
+    "@types/multer": "^2.0.0",
+    "@types/node": "^24.5.2",
+    "typescript": "^5.8.3"
+  }
+}
